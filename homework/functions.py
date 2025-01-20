@@ -46,7 +46,7 @@ def make_pipeline(estimator):
     # Descomposición PCA
     pca_transformer = PCA()
     ## selecciona las mejores k variables 
-    k_best_selector = SelectKBest(score_func=f_classif, k=1)
+    k_best_selector = SelectKBest(score_func=f_classif)
 
 
     # Crear el pipeline con preprocesamiento y el modelo
